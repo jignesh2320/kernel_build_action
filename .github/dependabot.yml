@@ -5,7 +5,7 @@ updates:
     schedule:
       interval: daily
     groups:
-      actions:
+      actions:0
         patterns:
           - "*"
   - package-ecosystem: npm
