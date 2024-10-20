@@ -67,6 +67,7 @@ Or use the [preset workflow file](https://github.com/dabao1955/kernel_build_acti
 | kernel-url | true | URL of Android kernel source code for your phone | https://github.com/username/project |
 | kernel-dir | false | The directory name of the Android kernel source code. This option may be used for OPLUS Kernel source code. | kernel |
 | depth | false | | 1 |
+| vendor | false | | false |
 | vendor-url | false | url of additional source code for the Android kernel source code. This option may be used for OPLUS source code. | https://github.com/username/project|
 | vendor-dir | false | | vendor |
 | kernel-branch | true | The branch of the source code that needs to be cloned, defaults branch to git clone is main | main |
@@ -75,8 +76,10 @@ Or use the [preset workflow file](https://github.com/dabao1955/kernel_build_acti
 | arch | true | The architecture of your mobile phone SOC is arm64 by default | arm64 |
 | android-version | true | The Android version required when downloading aosp-clang. If you want to use the latest aosp-clang or you do not use aosp-clang to compile the kernel, please ignore this option | 12 |
 | ksu | false | Enable KernelSU | true |
-| ksu-version | false | KernelSU version | v0.6.6 |
+| ksu-version | false | KernelSU version | v0.9.5 |
 | ksu-lkm(may not build successfully for non-GKI devices) | false | Build KernelSU as a linux kernel module | true |
+| ksu-other | false | | false |
+| ksu-url | false | Ude 3rd KernelSU | https://github.com/xxx/KernelSU/ |
 | disable-lto | false | | false |
 | lxc | false | Enable LXC and docker to config | false | 
  | lxc-patch | false | Add patch avoid not booting after enable lxc | false | 
