@@ -15,10 +15,10 @@ jobs:
     - name: Build Kernel
       uses: dabao1955/kernel_build_action@main
       with:
-          kernel-url: https://github.com/AcmeUI-Devices/android_kernel_xiaomi_cas
-          kernel-dir: msm-4.19
-          kernel-branch: taffy
-          config: cas_defconfig
+          kernel-url: https://github.com/jignesh2320/kernel_xiaomi_camellia_fx.git
+          kernel-dir: kernel/xiaomi/mt6833
+          kernel-branch: camellia-r-oss
+          config: yuan_defconfig
           arch: arm64
           aosp-gcc: true
           aosp-clang: true
